@@ -1,13 +1,16 @@
+package br.com.aritana.school.domain.recommendation;
+
+import br.com.aritana.school.domain.student.Student;
 import java.time.LocalDateTime;
 
-public class Recommendations {
+public class Recommendation {
 
   private Student referred;
   private Student referee;
   private LocalDateTime referDate;
 
 
-  public Recommendations(Student referred, Student referee) {
+  public Recommendation(Student referred, Student referee) {
     this.referred = referred;
     this.referee = referee;
     this.referDate = LocalDateTime.now();

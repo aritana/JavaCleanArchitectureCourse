@@ -1,6 +1,9 @@
+package br.com.aritana.domain.student;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+import br.com.aritana.school.domain.student.CPF;
 
 class CPFTest {
 

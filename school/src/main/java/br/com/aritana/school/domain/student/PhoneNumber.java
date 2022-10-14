@@ -1,3 +1,5 @@
+package br.com.aritana.school.domain.student;
+
 public class PhoneNumber {
 
   private String countryCode;
