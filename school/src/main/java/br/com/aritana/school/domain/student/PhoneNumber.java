@@ -27,7 +27,7 @@ public class PhoneNumber {
     return countryCode;
   }
 
-  public String getDdd() {
+  public String getddd() {
     return ddd;
   }
 

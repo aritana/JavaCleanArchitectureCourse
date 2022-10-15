@@ -20,4 +20,20 @@ public class Student {
     this.cpf = cpf;
     this.email = email;
   }
+
+  public String getName() {
+    return name;
+  }
+
+  public String getCpf() {
+    return cpf.toString();
+  }
+
+  public String getEmail() {
+    return email.toString();
+  }
+
+  public List<PhoneNumber> getPhoneNumbers() {
+    return phones;
+  }
 }
