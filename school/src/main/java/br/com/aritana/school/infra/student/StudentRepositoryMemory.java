@@ -11,7 +11,6 @@ public class StudentRepositoryMemory implements StudentRepository {
 
   private List<Student> enrolled = new ArrayList<>();
 
-
   @Override
   public void enroll(Student student) {
     this.enrolled.add(student);
@@ -20,7 +19,7 @@ public class StudentRepositoryMemory implements StudentRepository {
   @Override
   public Student searchByCPF(CPF cpf) {
     return this.enrolled.stream()
-        .filter(a-> a.getCpf().equals(cpf.getNumber()))
+        .filter(s-> s.getCpf().equals(cpf.getNumber()))
         .findFirst()
         .orElseThrow(()-> new StudentNotFound(cpf));
   }

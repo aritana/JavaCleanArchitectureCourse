@@ -28,11 +28,11 @@ public class Student {
   }
 
   public String getCpf() {
-    return cpf.toString();
+    return cpf.getNumber();
   }
 
   public String getEmail() {
-    return email.toString();
+    return email.getAddress();
   }
 
   public List<PhoneNumber> getPhoneNumbers() {

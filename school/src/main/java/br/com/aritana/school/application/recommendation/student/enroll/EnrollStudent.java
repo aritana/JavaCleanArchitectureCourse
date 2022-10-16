@@ -10,7 +10,10 @@ public class EnrollStudent {
     this.repository = repository;
   }
 
-  public void enroll(EnrollStudentDto studentData){
+  public void execute(EnrollStudentDto studentData){
+
+    Student newStudent = studentData.createStudent();
+    repository.enroll(newStudent);
 
   }
 
