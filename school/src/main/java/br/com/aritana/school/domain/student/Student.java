@@ -9,13 +9,15 @@ public class Student {
   private CPF cpf;
   private Email email;
 
-  private List<PhoneNumber>phones = new ArrayList();
+  private String password;
 
-  public void setPhoneNumber(String countryCode, String ddd, String number  ){
-    this.phones.add(new PhoneNumber(countryCode,ddd,number));
+  private List<PhoneNumber> phones = new ArrayList();
+
+  public void setPhoneNumber(String countryCode, String ddd, String number) {
+    this.phones.add(new PhoneNumber(countryCode, ddd, number));
   }
 
-  public Student(CPF cpf,String name,  Email email) {
+  public Student(CPF cpf, String name, Email email) {
     this.name = name;
     this.cpf = cpf;
     this.email = email;
